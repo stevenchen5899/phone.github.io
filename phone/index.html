@@ -11,27 +11,25 @@
             padding: 0;
         }
 
-        html, body {
+        body, html {
+            height: 100%;
             margin: 0;
-            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
             width: 100%;
             height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        .banner {
-            width: 100%;
-            height: 200px; /* Height of the banner */
-            background: url('https://img2.imgtp.com/2024/05/25/sp2jc4Ya.png') no-repeat center center;
+            background: url('https://img2.imgtp.com/2024/05/25/QWEtaMXL.png') no-repeat center center;
             background-size: cover;
-        }
-
-        .image-container {
-            position: relative;
-            width: 100%;
-            height: calc(100vh - 200px); /* Full screen height minus the banner height */
-            background: url('https://via.placeholder.com/800x1600') no-repeat center center;
-            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .call-link {
@@ -41,24 +39,10 @@
             text-decoration: none;
             color: transparent; /* 隱藏文字 */
         }
-
-        @media (min-width: 600px) {
-            .banner {
-                height: 300px; /* Adjust height for larger screens */
-            }
-
-            .image-container {
-                height: calc(100vh - 300px); /* Adjust height for larger screens */
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Banner with background image -->
-    <div class="banner"></div>
-
-    <!-- 可連結撥打電話的圖片 -->
-    <div class="image-container">
+    <div class="container">
         <a href="tel:0968333591" class="call-link">撥打電話</a>
     </div>
 </body>
